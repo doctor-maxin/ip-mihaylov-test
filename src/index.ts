@@ -1,8 +1,6 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
 import App from './App.vue';
 import './index.css';
 
-new Vue({
-  el: '#root',
-  render: (h) => h(App),
-});
+const app = createApp(App);
+app.mount('#root');
